@@ -3,85 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <title>Frontend Mentor | [Switch to Dark Theme]</title>
+  
+  
 </head>
 <body>
+  <header class="container bg-secondary">
+    <div class="row">
+      <div class="col-8">
+        <p>Social Media Dashboard</p>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <div class="col-4 text-right">
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="customSwitch1">
+          <label class="custom-control-label" for="customSwitch1">Dark Mode</label>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="row user">
+      <div class="col-3 user_elt bg-primary rounded p-3">
+        <ul class="list-unstyled text-center">
+        <li class="user_name">@nathanf</li>
+        <li class="user_nbfollowers font-weight-bold">1987</li>
+        <li class="user_followers">Followers</li>
+        <li class="user_rank"><img src="images/icon-up.svg">12 Today</li>
+      </ul>
+      </div>
+    </div>
+    
 
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Lucas Moquet</a>.
-  </div>
+    
+    @nathanf
+    1044
+    Followers
+    99 Today
+    
+    @realnathanf
+    11k
+    Followers
+    1099 Today
+    
+    Nathan F.
+    8239
+    Subscribers
+    144 Today
+    
+    
+    
+    Overview - Today
+    
+    Page Views
+    87
+    3%
+    
+    Likes
+    52
+    2%
+    
+    Likes
+    5462
+    2257%
+    
+    Profile Views
+    52k
+    1375%
+    
+    Retweets
+    117
+    303%
+    
+    Likes
+    507
+    553%
+    
+    Likes
+    107
+    19%
+    
+    Total Views
+    1407
+    12%
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Lucas Moquet</a>.
+    </div>
+  </main>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

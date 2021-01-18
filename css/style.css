@@ -9984,6 +9984,81 @@ body {
   color: #dc414c;
 }
 
+.custom-control-input:checked ~ .custom-control-label::before {
+  background: #aeb3cb;
+}
+
+.custom-switch .custom-control-label::after {
+  background-color: #1f212e;
+}
+
+/* * {
+    border: red 2px solid;
+} */
+body {
+  color: white;
+  background-color: #1e202a;
+}
+
+.bg-secondary {
+  background-color: #1f212e !important;
+}
+
+.title {
+  font-size: 2rem;
+  color: white;
+}
+
+.user__elt {
+  background-color: #252a41 !important;
+}
+.user__icon {
+  margin-right: 5px;
+}
+.user__border {
+  width: 100%;
+  height: 5px;
+}
+.user__border--facebook {
+  background-color: #198ff5;
+}
+.user__border--twitter {
+  background-color: #1ca0f2;
+}
+.user__border--instagram {
+  background: linear-gradient(#fdc468, #df4996);
+}
+.user__border--youtube {
+  background-color: #c4032a;
+}
+.user__nbfollowers {
+  color: white;
+  font-size: 3rem;
+}
+.user__followers {
+  letter-spacing: 3px;
+}
+.user__rank {
+  margin-top: 1rem;
+}
+.user__rank--green {
+  color: #1db489;
+}
+.user__rank--red {
+  color: #dc414c;
+}
+
+.overview {
+  font-size: 2rem;
+}
+
+.today__elt {
+  background-color: #252a41 !important;
+}
+.today__views {
+  color: white;
+}
+
 .custom-control-label::before {
   background-color: transparent;
   background: linear-gradient(#378fe6, #3eda82);

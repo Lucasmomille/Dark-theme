@@ -3,24 +3,20 @@
 } */
 
 body {
-    color: $text-lighter;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    background-color: $white;
-    font-size: 14px;
+    color: $white;
+    background-color: hsl(230, 17%, 14%);
+}
+.bg-secondary{
+    background-color: $top-bg !important;
 }
 .title {
     font-size: 2rem;
-    color: $text-darker;
+    color: $white;
 }
 
 .user {
-    > .col-3 {
-        flex: 0 0 24%;
-    }
     &__elt {
-        padding: 0 !important;
-        
+        background-color: hsl(228, 28%, 20%) !important; 
     }
     &__icon {
         margin-right: 5px;
@@ -43,7 +39,7 @@ body {
         }
     }
     &__nbfollowers {
-        color: $text-darker;
+        color: $white;
         font-size: 3rem;
     }
     &__followers {
@@ -66,26 +62,17 @@ body {
 }
 
 .today{
-    > .col-3 {
-        flex: 0 0 24%;
-    }
+
     &__elt {
-        margin-bottom: 1rem;
+        background-color: hsl(228, 28%, 20%) !important;
     }
     &__views{
-        font-size: 3rem;
-        color: $text-darker;
-        height: 55px;
+        color: $white;
     }
-    &__rank {
-        align-self: end;
-        &--green {
-            color: $green;
-        }
-        &--red {
-            color: $red;
-        }
-    }
+}
+.custom-control-label::before {
+    background-color: transparent;
+    background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {

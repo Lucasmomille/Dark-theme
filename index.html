@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
   <title>Frontend Mentor | [Switch to Dark Theme]</title>
   
@@ -12,83 +14,212 @@
 </head>
 <body>
   <header class="container bg-secondary">
-    <div class="row">
+    <div class="row mb-3">
       <div class="col-8">
-        <p>Social Media Dashboard</p>
-        <p>Total Followers: 23,004</p>
+        <h1 class="title font-weight-bold">Social Media Dashboard</h1>
+        <p class="subtitle font-weight-bold">Total Followers: 23,004</p>
       </div>
       <div class="col-4 text-right">
         <div class="custom-control custom-switch">
-          <input type="checkbox" class="custom-control-input" id="customSwitch1">
+          <input type="checkbox" class="custom-control-input button" id="customSwitch1">
           <label class="custom-control-label" for="customSwitch1">Dark Mode</label>
         </div>
       </div>
     </div>
   </header>
   <main class="container">
-    <div class="row user">
-      <div class="col-3 user_elt bg-primary rounded p-3">
-        <ul class="list-unstyled text-center">
-        <li class="user_name">@nathanf</li>
-        <li class="user_nbfollowers font-weight-bold">1987</li>
-        <li class="user_followers">Followers</li>
-        <li class="user_rank"><img src="images/icon-up.svg">12 Today</li>
-      </ul>
+    <div class="row user d-flex justify-content-between">
+      <div class="col-3 user__elt bg-primary rounded ">
+        <div class="user__border user__border--facebook"></div>
+        <ul class="list-unstyled text-center p-3">
+          <li class="user__name"><img src="images/icon-facebook.svg" alt="îcone logo facebook" class="user__icon">@nathanf</li>
+          <li class="user__nbfollowers font-weight-bold">1987</li>
+          <li class="user__followers">Followers</li>
+          <li class="user__rank user__rank--green"><img src="images/icon-up.svg" alt="îcone verte d'augmentation - triangle equilatéral" class="user__icon">12 Today</li>
+        </ul>
+      </div>
+      <div class="col-3 user__elt bg-primary rounded ">
+        <div class="user__border user__border--twitter"></div>
+        <ul class="list-unstyled text-center p-3">
+          <li class="user__name"><img src="images/icon-twitter.svg" alt="îcone logo twitter" class="user__icon">@nathanf</li>
+          <li class="user__nbfollowers font-weight-bold">1044</li>
+          <li class="user__followers">Followers</li>
+          <li class="user__rank user__rank--green"><img src="images/icon-up.svg" alt="îcone verte d'augmentation - triangle equilatéral" class="user__icon">99 Today</li>
+        </ul>
+      </div>
+      <div class="col-3 user__elt bg-primary rounded ">
+        <div class="user__border user__border--instagram"></div>
+        <ul class="list-unstyled text-center p-3">
+          <li class="user__name"><img src="images/icon-instagram.svg" alt="îcone logo instagram" class="user__icon">@realnathanf</li>
+          <li class="user__nbfollowers font-weight-bold">11k</li>
+          <li class="user__followers">Followers</li>
+          <li class="user__rank user__rank--green"><img src="images/icon-up.svg" alt="îcone verte d'augmentation - triangle equilatéral" class="user__icon">1099 Today</li>
+        </ul>
+      </div>
+      <div class="col-3 user__elt bg-primary rounded ">
+        <div class="user__border user__border--youtube"></div>
+        <ul class="list-unstyled text-center p-3">
+          <li class="user__name"><img src="images/icon-youtube.svg" alt="îcone logo youtube" class="user__icon">Nathan F.</li>
+          <li class="user__nbfollowers font-weight-bold">8239</li>
+          <li class="user__followers">Subscribers</li>
+          <li class="user__rank user__rank--red"><img src="images/icon-down.svg" alt="îcone rouge de diminution - triangle equilatéral" class="user__icon">144 Today</li>
+        </ul>
       </div>
     </div>
     
-
+    <div class="row">
+      <div class="col-12 text-left mt-5">
+        <p class="overview">Overview - Today</p>
+      </div>
+    </div>  
+    <div class="row d-flex today justify-content-between" >
+      <div class="col-3 bg-primary today__elt p-4 rounded">
+        <div class="row">
+          <div class="col-6 today__page">
+            Page Views
+          </div>
+          <div class="col-6 text-right today__icon">
+            <img src="images/icon-facebook.svg">
+          </div>
+        </div>
+        <div class="row mt-3 d-flex">
+          <div class="col-6 font-weight-bold d-flex">
+            <span class="today__views">87</span>
+          </div>
+          <div class="col-6 text-right today__rank today__rank--green">
+            <img src="images/icon-up.svg" class="user__icon"><span>3%</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 bg-primary today__elt p-4 rounded">
+        <div class="row">
+          <div class="col-6 today__page">
+            Likes
+          </div>
+          <div class="col-6 text-right today__icon">
+            <img src="images/icon-facebook.svg">
+          </div>
+        </div>
+        <div class="row mt-3 d-flex">
+          <div class="col-6 font-weight-bold d-flex">
+            <span class="today__views">52</span>
+          </div>
+          <div class="col-6 text-right today__rank today__rank--red">
+            <img src="images/icon-down.svg" class="user__icon"><span>2%</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 bg-primary today__elt p-4 rounded">
+        <div class="row">
+          <div class="col-6 today__page">
+            Likes
+          </div>
+          <div class="col-6 text-right today__icon">
+            <img src="images/icon-instagram.svg">
+          </div>
+        </div>
+        <div class="row mt-3 d-flex">
+          <div class="col-6 font-weight-bold d-flex">
+            <span class="today__views">5462</span>
+          </div>
+          <div class="col-6 text-right today__rank today__rank--green">
+            <img src="images/icon-up.svg" class="user__icon"><span>2257%</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 bg-primary today__elt p-4 rounded">
+        <div class="row">
+          <div class="col-6 today__page">
+            Profile Views
+          </div>
+          <div class="col-6 text-right today__icon">
+            <img src="images/icon-instagram.svg">
+          </div>
+        </div>
+        <div class="row mt-3 d-flex">
+          <div class="col-6 font-weight-bold d-flex">
+            <span class="today__views">52k</span>
+          </div>
+          <div class="col-6 text-right today__rank today__rank--green">
+            <img src="images/icon-up.svg" class="user__icon"><span>1375%</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 bg-primary today__elt p-4 rounded">
+        <div class="row">
+          <div class="col-6 today__page">
+            Retweets
+          </div>
+          <div class="col-6 text-right today__icon">
+            <img src="images/icon-twitter.svg">
+          </div>
+        </div>
+        <div class="row mt-3 d-flex">
+          <div class="col-6 font-weight-bold d-flex">
+            <span class="today__views">117</span>
+          </div>
+          <div class="col-6 text-right today__rank today__rank--green">
+            <img src="images/icon-up.svg" class="user__icon"><span>303%</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 bg-primary today__elt p-4 rounded">
+        <div class="row">
+          <div class="col-6 today__page">
+            Likes
+          </div>
+          <div class="col-6 text-right today__icon">
+            <img src="images/icon-twitter.svg">
+          </div>
+        </div>
+        <div class="row mt-3 d-flex">
+          <div class="col-6 font-weight-bold d-flex">
+            <span class="today__views">507</span>
+          </div>
+          <div class="col-6 text-right today__rank today__rank--green">
+            <img src="images/icon-up.svg" class="user__icon"><span>553%</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 bg-primary today__elt p-4 rounded">
+        <div class="row">
+          <div class="col-6 today__page">
+            Likes
+          </div>
+          <div class="col-6 text-right today__icon">
+            <img src="images/icon-youtube.svg">
+          </div>
+        </div>
+        <div class="row mt-3 d-flex">
+          <div class="col-6 font-weight-bold d-flex">
+            <span class="today__views">107</span>
+          </div>
+          <div class="col-6 text-right today__rank today__rank--red">
+            <img src="images/icon-down.svg" class="user__icon"><span>19%</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 bg-primary today__elt p-4 rounded">
+        <div class="row">
+          <div class="col-6 today__page">
+            Total Views
+          </div>
+          <div class="col-6 text-right today__icon">
+            <img src="images/icon-youtube.svg">
+          </div>
+        </div>
+        <div class="row mt-3 d-flex">
+          <div class="col-6 font-weight-bold d-flex">
+            <span class="today__views">1407</span>
+          </div>
+          <div class="col-6 text-right today__rank today__rank--red">
+            <img src="images/icon-down.svg" class="user__icon"><span>12%</span>
+          </div>
+        </div>
+      </div>
+    </div>
     
-    @nathanf
-    1044
-    Followers
-    99 Today
-    
-    @realnathanf
-    11k
-    Followers
-    1099 Today
-    
-    Nathan F.
-    8239
-    Subscribers
-    144 Today
-    
-    
-    
-    Overview - Today
-    
-    Page Views
-    87
-    3%
-    
-    Likes
-    52
-    2%
-    
-    Likes
-    5462
-    2257%
-    
-    Profile Views
-    52k
-    1375%
-    
-    Retweets
-    117
-    303%
-    
-    Likes
-    507
-    553%
-    
-    Likes
-    107
-    19%
-    
-    Total Views
-    1407
-    12%
+  
     
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
